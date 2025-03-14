@@ -1,4 +1,4 @@
-# Blog REST API
+# RecipeConnect Backend API
 
 This repository contains the RESTful API for the RecipeConnect project, providing endpoints for managing recipes, comments, and user authentication.
 
