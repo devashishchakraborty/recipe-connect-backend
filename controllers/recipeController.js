@@ -24,7 +24,7 @@ const getRecipeById = asyncHandler(async (req, res) => {
 
   const recipe = await prisma.recipe.findUnique({
     where: { id: parseInt(recipeId) },
-    include: { comments: true, author: true },
+    include: { comments: { include: { author: true } }, author: true },
   });
 
   if (!recipe) return res.sendStatus(404);
@@ -87,6 +87,9 @@ const addComment = asyncHandler(async (req, res) => {
       text: req.body.comment,
       author_id: req.user.id,
       recipe_id: parseInt(req.params.recipeId),
+    },
+    include: {
+      author: true,
     },
   });
   res.send(comment);
