@@ -1,10 +1,10 @@
 # Blog REST API
 
-This repository contains the RESTful API for the Blog project, providing endpoints for managing blog recipes, comments, and user authentication.
+This repository contains the RESTful API for the RecipeConnect project, providing endpoints for managing recipes, comments, and user authentication.
 
 ## Features
 
-- **CRUD Operations**: Create, read, update, and delete blog recipes and comments.
+- **CRUD Operations**: Create, read, update, and delete recipes and comments.
 - **User Authentication**: Secure login and registration using JWT (JSON Web Tokens).
 - **Role-Based Access**: Differentiate between regular users and admin users for access control.
 - **Data Validation**: Ensure data integrity with robust validation mechanisms.
@@ -22,8 +22,8 @@ This repository contains the RESTful API for the Blog project, providing endpoin
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/devashishchakraborty/blog-api.git
-   cd blog-api
+   git clone https://github.com/devashishchakraborty/recipe-connect-backend.git
+   cd recipe-connect-backend
    ```
 
 2. **Install dependencies**:
@@ -60,6 +60,7 @@ This repository contains the RESTful API for the Blog project, providing endpoin
 
   - `GET /recipes`: Retrieve all published recipes.
   - `GET /recipes/:recipeId`: Retrieve a specific recipe by ID.
+  - `GET /recipes/user`: Retrieve all recipes of a user.
   - `POST /recipes`: Create a new recipe.
   - `PUT /recipes/:recipeId`: Update a recipe by ID.
   - `DELETE /recipes/:recipeId`: Delete a recipe by ID.

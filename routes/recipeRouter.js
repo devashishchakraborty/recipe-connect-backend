@@ -4,9 +4,9 @@ import recipeController from "../controllers/recipeController.js";
 const recipeRouter = Router();
 
 recipeRouter.get("/", recipeController.getAllPublishedRecipes);
-recipeRouter.get("/:recipeId", recipeController.getRecipeById);
+recipeRouter.get("/user", recipeController.getUserRecipes);
 
-recipeRouter.get("/user/:userId", recipeController.getUserRecipes);
+recipeRouter.get("/:recipeId", recipeController.getRecipeById);
 
 recipeRouter.post("/", recipeController.createRecipe);
 recipeRouter.put("/:recipeId", recipeController.updateRecipe);
