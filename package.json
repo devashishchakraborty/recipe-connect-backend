@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "blog-api",
+  "name": "recipe-connect-backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
